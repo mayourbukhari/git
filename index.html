@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GIT Cheat Sheet</title>
+</head>
+<body>
+    <h1>GIT Cheat Sheet</h1>
+    <h2>Basic Commands</h2>
+    <ul>
+        <li><code>git init</code> - Initialize a new Git repository</li>
+        <li><code>git clone [url]</code> - Clone an existing repository</li>
+        <li><code>git add [file]</code> - Stage changes for commit</li>
+        <li><code>git commit -m "[message]"</code> - Commit changes</li>
+        <li><code>git status</code> - Check the status of the repository</li>
+        <li><code>git push</code> - Push changes to a remote repository</li>
+        <li><code>git pull</code> - Pull changes from a remote repository</li>
+    </ul>
+    <h2>Branching</h2>
+    <ul>
+        <li><code>git branch</code> - List all branches</li>
+        <li><code>git branch [branch-name]</code> - Create a new branch</li>
+        <li><code>git checkout [branch-name]</code> - Switch to a branch</li>
+        <li><code>git merge [branch-name]</code> - Merge a branch into the current branch</li>
+        <li><code>git branch -d [branch-name]</code> - Delete a branch</li>
+    </ul>   
+    <h2>Viewing Changes</h2>
+    <ul>
+        <li><code>git diff</code> - Show changes between commits, commit and working tree, etc.</li>
+        <li><code>git log</code> - View commit history</li>
+        <li><code>git show [commit]</code> - Show details of a specific commit</li>
+    </ul>
+    <h2>Undoing Changes</h2>
+    <ul>
+        <li><code>git reset [file]</code> - Unstage a file</li>
+        <li><code>git reset --hard</code> - Reset the working directory to the last commit</li>
+        <li><code>git revert [commit]</code> - Create a new commit that undoes changes made by a previous commit</li>
+    </ul>
+    <h2>Remote Repositories</h2>
+    <ul>    
+        <li><code>git remote -v</code> - List remote repositories</li>
+        <li><code>git remote add [name] [url]</code> - Add a new remote repository</li>
+        <li><code>git remote remove [name]</code> - Remove a remote repository</li>
+        <li><code>git fetch [remote]</code> - Fetch changes from a remote repository</li>
+    </ul>
+    <h2>Stashing Changes</h2>
+    <ul>
+        <li><code>git stash</code> - Stash changes in a dirty working directory</li>
+        <li><code>git stash pop</code> - Apply stashed changes and remove them from the stash</li>
+        <li><code>git stash list</code> - List all stashed changes</li>
+        <li><code>git stash drop [stash@{n}]</code> - Remove a specific stash</li>
+    </ul>
+    <h2>Configuration</h2>
+    <ul>
+        <li><code>git config --global user.name "[name]"</code> - Set the name for commits</li>
+        <li><code>git config --global user.email "[email]"</code> - Set the email for commits</li>
+        <li><code>git config --list</code> - List all Git configuration settings</li>
+    </ul>
+    <h2>Help</h2>
+    <ul>
+        <li><code>git help</code> - Get help for Git commands</li>
+        <li><code>git [command] --help</code> - Get help for a specific command</li>
+    </ul>
+    <h2>Useful Aliases</h2>
+    <ul>
+        <li><code>git config --global alias.co checkout</code> - Create an alias for checkout</li>
+        <li><code>git config --global alias.br branch</code> - Create an alias for branch</li>
+        <li><code>git config --global alias.ci commit</code> - Create an alias for commit</li>
+        <li><code>git config --global alias.st status</code> - Create an alias for status</li>
+        <li><code>git config --global alias.last 'log -1 HEAD'</code> - Create an alias to show the last commit</li>
+    </ul>
+    <h2>Resources</h2>
+    <ul>
+        <li><a href="https://git-scm.com/doc">Git Documentation</a></li>
+        <li><a href="https://www.atlassian.com/git/tutorials">Atlassian Git Tutorials</a></li>
+        <li><a href="https://www.git-tower.com/learn/git/ebook/en/command-line/cheat-sheet">Git Cheat Sheet by Tower</a></li>
+    </ul>
+    <footer>
+        <p>Created by Syed Mohsin Bukhari</p>
+        
+    </footer>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+        }
+        h1, h2 {
+            color: #333;            
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li {
+            margin: 5px 0;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+            border-radius: 4px;
+        }
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</footer>
+</body>
+</html>
